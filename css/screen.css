@@ -1,0 +1,26 @@
+html {
+    font-size: 1.618em;
+    line-height: 1.2em;
+    text-rendering: optimizeLegibility;
+    font-family:sans-serif;
+}
+
+label, input, select{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+#header {
+    background-color: #A0A0A0;
+}
+#header_title, #header_subtitle {
+    width: 85%;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+#submitbutton{
+    width: 70%;
+}
