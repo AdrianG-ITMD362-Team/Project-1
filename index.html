@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
-  <title>Sign up Form</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
-  <link rel="stylesheet" media="screen" href="css/reset.css"/>
-  <link rel="stylesheet" media="screen" href="css/screen.css"/>
+  <title>Video Game Beta Sign Up</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="css/reset.css" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
+  <div class="wrapper">
+    <form method="post" action="#null" autocomplete="on">
+      <label>Email Address</label>
+      <input type="email" name="email" placeholder="example@example.com" pattern="^.+@.+$" required />
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required />
+      <label>Preferred Platform</label>
+      <select name="platform">
+        <option value="" disabled selected>Game Platform</option>
+        <option value="PC">PC (Windows/Linux/Mac)</option>
+        <option value="PS5">Playstation 5</option>
+        <option value="SeriesX/S">Xbox Series X/S</option>
+      </select>
+      <input type="submit" value="Take part into the fight!" id="submitbutton">
+    </form>
+  </div>
   <script src="js/site.js"></script>
 </body>
 </html>
