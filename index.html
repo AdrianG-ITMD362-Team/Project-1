@@ -3,27 +3,42 @@
 <head>
   <title>Video Game Beta Sign Up</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="css/reset.css" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+  <link rel="stylesheet" media="screen" href="css/reset.css"/>
+  <link rel="stylesheet" media="screen" href="css/screen.css"/>
 </head>
 <body>
-  <div class="wrapper">
+  <main id="content">
+    <h1>VIDEO GAME BETA SIGN-UP!</h1>
+    <p>Register below to get involved in the future beta and receive development updates on the game.</p>
     <form method="post" action="#null" autocomplete="on">
-      <label>Email Address</label>
-      <input type="email" name="email" placeholder="example@example.com" pattern="^.+@.+$" required />
-      <label>Date of Birth</label>
-      <input type="date" name="dob" required />
-      <label>Preferred Platform</label>
-      <select name="platform">
-        <option value="" disabled selected>Game Platform</option>
-        <option value="PC">PC (Windows/Linux/Mac)</option>
-        <option value="PS5">Playstation 5</option>
-        <option value="SeriesX/S">Xbox Series X/S</option>
-      </select>
-      <input type="submit" value="Take part into the fight!" id="submitbutton">
+      <div id="input-name">
+        <label for="name">Name</label>
+        <input type="text" name="user_name" id="name" placeholder="e.g. John D"/>
+      </div>
+      <div id="input-email">
+        <label for="email">Email Address</label>
+        <input type="email" name="email_address" id="email" placeholder="contact@example.com" pattern="^.+@.+$" required/>
+      </div>
+      <div id="input-dob">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="date_of_birth" id="dob" required/>
+      </div>
+      <div id="input-platform">
+        <label for="platform">Preferred Platform</label>
+        <select name="game_platform" id="platform" required>
+          <option value="" disabled selected>Video Game Platform</option>
+          <option value="PC">PC (Windows/Linux/Mac)</option>
+          <option value="PS5">Playstation 5</option>
+          <option value="SeriesX/S">Xbox Series X/S</option>
+          <option value="Switch">Nintendo Switch</option>
+        </select>
+      </div>
+      <div id="input-submit">
+        <input type="submit" value="Take part in the fight!" id="submitbutton"/>
+      </div>
     </form>
-  </div>
+  </main>
   <script src="js/site.js"></script>
 </body>
 </html>
