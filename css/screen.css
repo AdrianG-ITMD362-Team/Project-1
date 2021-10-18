@@ -1,8 +1,8 @@
 /* ===== BASE STYLES ===== */
 
 html {
-  font-size: 1.44em; /* 26.4px */
-  line-height: 1.44em; /* 31.68px / ~ 120% */
+  font-size: 1.44em; /* 31.68px */
+  line-height: 1.728em; /* 38.016 / ~ 120% */
   text-rendering: optimizeLegibility;
   font-family:sans-serif;
 }
@@ -43,3 +43,36 @@ select {
 #submitbutton{
   width: 70%;
 }
+
+/* Tablet Devices */
+@media only screen and (min-width : 480px) {
+
+    label, input, select{
+      display: inline-block;
+    }
+    
+    label {
+      text-align: center;
+      width: 38%;
+    }
+
+    input {
+      width: 50%;
+    }
+
+    select {
+      width: 55%;
+    }
+
+    #content {
+      display: block;
+      margin: auto;
+      width: 95%;
+    }
+  
+    #submitbutton {
+      width: 50%;
+      display: block;
+    }
+}
+
