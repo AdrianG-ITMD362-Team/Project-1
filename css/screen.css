@@ -76,3 +76,32 @@ select {
     }
 }
 
+/* Desktop Devices */
+@media only screen and (min-width : 992px) {
+    html {
+      font-size: 1.2em; /* 26.4px */
+    }
+
+    label {
+      text-align: right;
+      width: 10em;
+    }
+
+    input {
+      padding: 0.5em;
+      width: 12em;
+    }
+
+    select {
+      width: 13em;
+    }
+
+    #content {
+      width: 28em;
+    }
+
+    #submitbutton{
+      width: auto;
+    }
+}
+
