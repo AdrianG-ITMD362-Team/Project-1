@@ -21,6 +21,7 @@ h1, p {
   display: block;
   text-align: center;
   color: #42a5f5;
+  padding: 0.2em 0 0.2em 0;
 }
 
 div {
@@ -56,66 +57,68 @@ label {
   cursor: pointer;
 }
 
-
 /* Tablet Devices */
 @media only screen and (min-width : 480px) {
-
-    label, input, select{
-      display: inline-block;
-    }
+  label, input, select{
+    display: inline-block;
+  }
     
-    label {
-      text-align: center;
-      width: 38%;
-    }
+  label {
+    text-align: center;
+    width: 38%;
+  }
 
-    input {
-      width: 50%;
-    }
+  input {
+    width: 50%;
+  }
 
-    select {
-      width: 55%;
-    }
+  select {
+    width: 55%;
+  }
 
-    #content {
-      display: block;
-      margin: auto;
-      width: 95%;
-    }
+  #content {
+    display: block;
+    margin: auto;
+    width: 95%;
+    margin-top: 0.5em;
+  }
   
-    #submitbutton {
-      width: 50%;
-      display: block;
-    }
+  #submitbutton {
+    width: 50%;
+    display: block;
+  }   
 }
 
 /* Desktop Devices */
 @media only screen and (min-width : 992px) {
-    html {
-      font-size: 1.2em; /* 26.4px */
-    }
+  html {
+    font-size: 1.2em; /* 26.4px */
+  }
 
-    label {
-      text-align: right;
-      width: 10em;
-    }
+  label {
+    text-align: right;
+    width: 10em;
+  }
 
-    input {
-      padding: 0.5em;
-      width: 12em;
-    }
+  input {
+    padding: 0.5em;
+    width: 12em;
+  }
 
-    select {
-      width: 13em;
-    }
+  select {
+    width: 13em;
+  }
 
-    #content {
-      width: 28em;
-      margin-top: 1.5em;
-    }
+  #content {
+    width: 28em;
+    margin-top: 1.5em;
+  }
 
-    #submitbutton{
-      width: auto;
-    }
+  #submitbutton {
+    width: auto;
+  }
+
+  h1, p {
+    padding: 0.5em 0 0.5em 0;
+  }
 }
-
