@@ -57,13 +57,9 @@ label {
   cursor: pointer;
 }
 
-#newsletter {
+#newsletter_box {
   height: 1.7em;
   float: left;
-  
-}
-
-#input-checkbox input{
   width: 30%;
 }
 
@@ -96,7 +92,16 @@ label {
   #submitbutton {
     width: 50%;
     display: block;
-  }   
+  }
+  
+  #input-checkbox label{
+    width: 70%;
+  }
+
+  #newsletter_box {
+    width: 10%;
+    margin: 0 0 0 4em;
+  }
 }
 
 /* Desktop Devices */
@@ -131,5 +136,13 @@ label {
   h1, p {
     padding: 0.5em 0 0.5em 0;
   }
+  
+  #newsletter_box {
+    height: 1em;
+    width: 1em;
+  }
 
+  #input-checkbox label{
+    width: 21em;
+  }
 }
