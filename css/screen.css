@@ -57,6 +57,16 @@ label {
   cursor: pointer;
 }
 
+#newsletter {
+  height: 1.7em;
+  float: left;
+  
+}
+
+#input-checkbox input{
+  width: 30%;
+}
+
 /* Tablet Devices */
 @media only screen and (min-width : 480px) {
   label, input, select{
@@ -121,4 +131,5 @@ label {
   h1, p {
     padding: 0.5em 0 0.5em 0;
   }
+
 }
