@@ -10,13 +10,6 @@ html {
   background-color: #080a14;
 }
 
-label, input, select{
-  width: 85%;
-  margin: auto;
-  display: block;
-  font-family: 'Exo 2', sans-serif;
-}
-
 h1, p {
   width: 85%;
   margin: auto;
@@ -26,8 +19,11 @@ h1, p {
   padding: 0.2em 0 0.2em 0;
 }
 
-div {
-    padding: 0.5em 0 0.5em 0;
+label, input, select{
+  width: 85%;
+  margin: auto;
+  display: block;
+  font-family: 'Exo 2', sans-serif;
 }
 
 input, select{
@@ -47,15 +43,21 @@ label {
   color: #42a5f5;
 }
 
+div {
+  padding: 0.5em 0 0.5em 0;
+}
+
 a:link, a:visited {
   color: #42a5f5;
 }
 
-/* IDs & Classes CSS */
-
-#submitbutton:hover {
-  background-color: #00e5ffd5;
+/* Changes calendar icon for date input */ 
+::-webkit-calendar-picker-indicator {
+  filter: invert(100%) brightness(50%) sepia(50%) saturate(10000%) hue-rotate(240deg);
+  cursor: pointer;
 }
+
+/* IDs & Classes CSS */
 
 #header {
   background-color: #161a32;
@@ -68,6 +70,10 @@ a:link, a:visited {
   cursor: pointer;
 }
 
+#submitbutton:hover {
+  background-color: #00e5ffd5;
+}
+
 #newsletter_box {
   height: 1.7em;
   float: left;
@@ -78,12 +84,6 @@ a:link, a:visited {
   height: 1.7em;
   float: left;
   width: 30%;
-}
-
-/* Changes calendar icon for date input */ 
-::-webkit-calendar-picker-indicator {
-  filter: invert(100%) brightness(50%) sepia(50%) saturate(10000%) hue-rotate(240deg);
-  cursor: pointer;
 }
 
 /* Tablet Devices */
@@ -177,6 +177,13 @@ a:link, a:visited {
   #content {
     width: 28em;
     margin-top: 1.5em;
+    background-color: #0a0c15;
+    border-radius: 1em;
+    padding: 2em 0 2em;
+  }
+
+  #input-submit {
+    padding: 1.5em 0 0em;
   }
 
   #submitbutton {
@@ -190,17 +197,7 @@ a:link, a:visited {
   #platform {
     cursor: pointer;
   }
-
-  #content {
-    background-color: #0a0c15;
-    border-radius: 1em;
-    padding: 2em 0 2em;
-  }
-
-  #input-submit {
-    padding: 1.5em 0 0em;
-  }
-
+  
   /* Desktop Checkboxes */
 
   #terms_box {
@@ -228,6 +225,4 @@ a:link, a:visited {
     width: 19em;
     cursor: pointer;
   }
-
-  
 }
