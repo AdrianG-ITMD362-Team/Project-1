@@ -24,7 +24,7 @@ function clickbutton(){
     subscribed = "\nYou have been subscribed to our bi-weekly update newsletter!";
   }
 
-  alert(prompt + subscribed);
+  alert(message + subscribed);
 }
 
 window.addEventListener('load', js_ready);
