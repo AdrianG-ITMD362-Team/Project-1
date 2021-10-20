@@ -44,6 +44,7 @@ input, select{
 
 select {
   width: 87%;
+  color: #42a5f5;
 }
 
 #header {
@@ -62,6 +63,12 @@ label {
 }
 
 #newsletter_box {
+  height: 1.7em;
+  float: left;
+  width: 30%;
+}
+
+#terms_box {
   height: 1.7em;
   float: left;
   width: 30%;
@@ -104,11 +111,20 @@ label {
     display: block;
   }
   
-  #input-checkbox label{
+  #input-checkbox-newsletter label{
     width: 70%;
   }
 
   #newsletter_box {
+    width: 10%;
+    margin: 0 0 0 4em;
+  }
+
+  #input-checkbox-terms label{
+    width: 70%;
+  }
+
+  #terms_box {
     width: 10%;
     margin: 0 0 0 4em;
     
