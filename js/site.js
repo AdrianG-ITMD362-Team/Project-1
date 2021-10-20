@@ -6,7 +6,24 @@ function js_ready(){
 }
 
 function clickbutton(){
-  alert("Thank you taking a interest in our game, we hope to see you in the future beta!");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const check = document.getElementById("terms_box").value;
+
+  let message;
+  let subscribed;
+
+  if (name != ""){
+    message = "Thank you " + name + " for taking a interest in our game, expect a future beta key in your inbox";
+  } else {
+    message = "Thank you " + email + " for taking a interest in our game, expect a future beta key in your inbox!";
+  }
+
+  if (check == "on"){
+    subscribed = "\nYou have been subscribed to our bi-weekly update newsletter!";
+  }
+
+  alert(prompt + subscribed);
 }
 
 window.addEventListener('load', js_ready);
